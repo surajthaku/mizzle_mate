@@ -1,0 +1,3 @@
+fastapi
+uvicorn
+from_root

@@ -1,0 +1,8 @@
+message,intent
+"Create a new CI/CD pipeline",ci_cd
+"Deploy the latest build",ci_cd
+"Launch a new instance",instance_creation
+"Add 50GB to my volume",storage
+"Show me CPU usage",monitoring
+"Show me logs",logs
+
