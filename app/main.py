@@ -14,18 +14,7 @@ app = FastAPI(title="Mizzle Mate - DevOps Chatbot")
 
 @app.post("/chat")
 async def chat_handler(input: ChatInput):
-    """
-    Handle incoming chat messages from the user.
-
-    Parameters:
-        input (ChatInput): A Pydantic model containing `user_id` and `message`.
-
-    Returns:
-        dict: A response object with the chatbot's reply, module name, and status.
-
-    Raises:
-        MizzleException: Custom exception raised when any internal error occurs during message routing or handling.
-    """
+    
     try:
         user_id = input.user_id
         message = input.message
