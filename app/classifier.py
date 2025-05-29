@@ -1,36 +1,3 @@
-# import re
-
-# def classify_intent(message: str) -> str:
-#     message = message.lower()
-
-#     if "pipeline" in message or "deploy" in message:
-#         return "ci_cd"
-#     elif "launch" in message or "instance" in message:
-#         return "instance_creation"
-#     elif "cpu" in message or "usage" in message:
-#         return "monitoring"
-#     elif "log" in message:
-#         return "logs"
-#     elif "volume" in message or "storage" in message:
-#         return "storage"
-#     else:
-#         return "unknown"
-
-
-# import joblib
-# import os
-
-# # Load trained model and vectorizer
-# model_path = os.path.join("intent_model", "model.pkl")
-# vectorizer_path = os.path.join("intent_model", "vectorizer.pkl")
-
-# clf = joblib.load(model_path)
-# vectorizer = joblib.load(vectorizer_path)
-
-# def classify_intent(message: str) -> str:
-#     vec = vectorizer.transform([message])
-#     intent = clf.predict(vec)[0]
-#     return intent
 
 
 from fastapi import HTTPException
