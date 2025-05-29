@@ -2,7 +2,7 @@ import re
 
 class InstanceCreationModel:
     def handle(self, message: str) -> str:
-        # Simple regex to extract resources
+        
         ram_match = re.search(r'(\d+GB|\d+ GB)', message)
         cpu_match = re.search(r'(\d+)\s*CPU', message, re.IGNORECASE)
 
